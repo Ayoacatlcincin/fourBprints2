@@ -88,22 +88,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
         <h1><b>sweaters</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
         <p class="w3-text-grey"></p>
         <hr>
-         <!-- Automatic Slideshow Images 
-       <div class="mySlides w3-display-container w3-center">
+         <!-- Automatic Slideshow Images -->
+       <div class="mySlides2 w3-display-container w3-center">
         <img src="images/warriorshoodie.jpg" style="width:100%; height:600px; display: block">
         <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
           <h2></h2>
           <p><b></b></p>   
         </div>
       </div>
-      <div class="mySlides w3-display-container w3-center">
+      <div class="mySlides2 w3-display-container w3-center">
         <img src="images/unionhoodie.jpg" style="width:100%; height:600px; display: block">
         <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
           <h2></h2>
           <p><b></b></p>    
         </div>
       </div>
-      <div class="mySlides w3-display-container w3-center">
+      <div class="mySlides2 w3-display-container w3-center">
         <img src="images/cougarstrack.jpg" style="width:100%; height:600px; display: block">
         <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
           <h2></h2>
@@ -226,6 +226,22 @@ document.getElementById("myLink").click();
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
   }
+
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex2 = 0;
+    carousel2();
+    
+    function carousel2() {
+      var i;
+      var x = document.getElementsByClassName("mySlides2");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex2 > x.length) {myIndex2 = 1}    
+      x[myIndex2-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
 
 </script>
 

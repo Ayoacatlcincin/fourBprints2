@@ -238,3 +238,37 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     cursor: pointer;
     background-color: #4CAF50;
 }
+.containercontact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .container {
+    padding: 5px;
+    margin-left: 26px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 5px;
+  }
+  
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  .xlarge-font {
+    font-size: 40px;
+    color: red;
+    font-family: Helvetica;
+  }
+  

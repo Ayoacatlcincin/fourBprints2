@@ -60,7 +60,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
         <h1><b>uniform shirts</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
         <p></p><img src="images/warriorsshirt.jpg">
         <hr>
-     
+      <!-- Automatic Slideshow Images -->
+            <div class="mySlides w3-display-container w3-center">
+              <img src="/images/htmljava.jpg" style="width:100%; height:600px; display: block">
+              <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
+                <h2>HTML, CSS, and JavaScript</h2>
+                <p><b>Helping you design your website!</b></p>   
+              </div>
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+              <img src="/images/ansiblecode.png" style="width:100%; height:600px; display: block">
+              <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
+                <h2>Ansible Automation</h2>
+                <p><b>Developing automation solutions for the real world</b></p>    
+              </div>
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+              <img src="/images/matrix.jpg" style="width:100%; height:600px; display: block">
+              <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
+                <h2>Backend development</h2>
+                <p><b>Working to create new backend solutions</b></p>    
+              </div>
+            </div>
         <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
         <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
         <hr>
@@ -185,6 +206,24 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-red";
 }
 document.getElementById("myLink").click();
+
+
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+
 </script>
 
 </body>

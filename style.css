@@ -231,12 +231,16 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .button {
+    background-color: rgb(34, 31, 219);
     border: none;
     color: white;
-    padding: 14px 28px;
-    font-size: 16px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
     cursor: pointer;
-    background-color: #4CAF50;
 }
 .containercontact {
     border-radius: 5px;
@@ -292,9 +296,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   .button-xlarge {
     font-size: 125%;
   }
-  button {
-    float: right;
-  }
-  #name, #email {
+   #name, #email {
     width: 50%;
   }

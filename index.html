@@ -119,23 +119,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
         <hr>
         
       <!-- Automatic Slideshow Images -->
-      <!--
-<div class="mySlides w3-display-container w3-center">
-<img src="images/multiitems.jpg" style="width:100%; height:600px; display: block">
+      
+<div class="mySlides3 w3-display-container w3-center">
+<img src="images/multiitems.jpg" style="width:100%; height:300px; display: block">
 <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
   <h2></h2>
   <p><b></b></p>   
 </div>
 <div>
-iv class="mySlides w3-display-container w3-center">
-<img src="images/warriorbag.jpg" style="width:100%; height:600px; display: block">
+iv class="mySlides3 w3-display-container w3-center">
+<img src="images/warriorbag.jpg" style="width:100%; height:300px; display: block">
 <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
   <h2></h2>
   <p><b></b></p>    
 </div>
 <div>
-iv class="mySlides w3-display-container w3-center">
-<img src="images/warriorsbag.jpg" style="width:100%; height:600px; display: block">
+iv class="mySlides3 w3-display-container w3-center">
+<img src="images/warriorsbag.jpg" style="width:100%; height:300px; display: block">
 <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
   <h2></h2>
   <p><b></b></p>    
@@ -144,7 +144,7 @@ iv class="mySlides w3-display-container w3-center">
   </div> 
 -->
 <!-- Line break 
-  <img src="images/colorsshirts.png" class="w3-image w3-greyscale" style="width:100%;" id="myMap"> -->
+  <img src="images/colorsshirts.png" class="w3-image w3-greyscale" style="width:100%;" id="myMap"> 
   
 <!-- About Container -->
 <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
@@ -242,6 +242,22 @@ document.getElementById("myLink").click();
       x[myIndex2-1].style.display = "block";  
       setTimeout(carousel2, 4000);    
     }
+
+  // Automatic Slideshow3 - change image every 4 seconds
+  var myIndex3 = 0;
+  carousel3();
+  
+  function carousel3() {
+    var i;
+    var x = document.getElementsByClassName("mySlides3");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex3++;
+    if (myIndex3 > x.length) {myIndex3 = 1}    
+    x[myIndex3-1].style.display = "block";  
+    setTimeout(carousel3, 4000);    
+  }
 
 </script>
 

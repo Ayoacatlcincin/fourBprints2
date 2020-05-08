@@ -299,3 +299,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
    #name, #email {
     width: 50%;
   }
+
+  .contactform1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    display: 100%;
+
+  }

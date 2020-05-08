@@ -307,6 +307,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     display: 100%;
 
   }
-  #slidesize {
+  .slidesize {
     max-width: 500px; max-height: 600px;
   }

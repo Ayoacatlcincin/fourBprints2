@@ -310,3 +310,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   .slidesize {
     max-width: 500px; max-height: 600px;
   }
+  .aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }

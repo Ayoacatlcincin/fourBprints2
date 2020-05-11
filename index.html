@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-
+<link rel="icon" 
+      type="image/png" 
+      href="images/favicon4b.png">
 <style>
 body, html {height: 100%}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
@@ -13,14 +15,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 .bgimg {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url();
-  min-height: 90%;
+  background-image: url("images/logoandback.jpg");
+  min-height: 100%;
+  
 }
+@media only screen and (max-width: 600px) {
+    .bgimg {min-height: 25%;}
+  }
+
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-hide-small">
+<div class="w3-top">
   <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
     <a href="#" class="w3-bar-item w3-button">HOME</a>
     <a href="#menu" class="w3-bar-item w3-button">PRODUCT</a>
@@ -34,15 +41,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   <!--<div class="w3-display-bottomleft w3-padding">
     <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
   </div>-->
-  <div class="w3-display-middle w3-center">
-    <!--<span class="w3-text-white w3-hide-small" style="font-size:30px"><br></span>
+  <!--<div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:30px"><br></span>
     <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:30px"><b><br></b></span>-->
-    <!--<a href="#menu" style="padding:0"class="w3-button w3-xxlarge w3-black">--><img src="images/logoandback.jpg" class="w3-black" style="width:100%;height:100%">
-  </div>
+    <!--<a href="#menu" style="padding:0"class="w3-button w3-xxlarge w3-black">
+  </div>-->
+  
 </header>
 
-<!-- nav Container -->
-<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-32 w3-xxlarge" id="menu">
   <div class="w3-content">
   
     <h1 class="w3-center w3-jumbo" style="margin-bottom:20px">PRODUCTS</h1>
@@ -151,9 +159,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
  w3-xlarge" id="about">
   <div class="w3-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:20px">About</h1>
+    <img src="images/misty.jpg" style="width:150px" class="w3-circle w3-right aside" alt="Chef">
     <p>Thank you for visiting our FoutBPrints website. We started FoutBPrints in 2018 to support our local community and at the activities of our 4 boys, hence the name. Since, then we have grown well beyond that and ready to meet all your printing needs. From T-shirts to full warm-up gear and bags we are here to help you! We strive to treat each and every client no matter the size of your order as as if you were a member of our family! So from our family to you.... We look forward to working together !</p>
-    <img src="images/misty.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
-    <p>We are proud of our prints.</p>
+    
     <img src="images/mistyfamily.JPG" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
     <h1><b></b></h1>
     
@@ -175,9 +183,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 <!-- Contact -->
 <!-- The contact us form -->
 <div class="container" id="myMap">
-  <div class="row">
-    <div class="column-66">
-      <h1 class="xlarge-font"><b>Reach out to us!</b></h1>
+  <!--<div class="row">
+    <div class="column-66">-->
+      <h1 style="padding-top: 20px;" class="w3-jumbo">Reach out to us!</h1>
       
       
         <div class="containercontact">
@@ -189,24 +197,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
           
           
 
-<form class="contactform1 gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" id="contactus"
+<form class="contactform1 gform pure-form pure-form-stacked" style="display:block; width:100%" method="POST" data-email="example@email.net" id="contactus"
 action="https://script.google.com/macros/s/AKfycbyMTsbrpyS0t72TilzYV0Ap82wRVDHU918oMgWZK2yhcI8NH0I/exec">
 <!-- change the form action to your script url -->
 
 <div class="form-elements">
-<fieldset class="pure-group">
+<fieldset style="padding-bottom: 0;" class="pure-group">
 <label for="firstname">First Name: </label>
 <input id="firstname" name="firstname" placeholder="Enter first name" />
 </fieldset>
 
-<fieldset class="pure-group">
+<fieldset style="padding-bottom: 0;"  class="pure-group">
 <label for="lastname">Last Name: </label>
 <input id="lastname" name="lastname" placeholder="Enter last name" />
 </fieldset>
 
-<fieldset class="pure-group">
+<fieldset style="padding-bottom: 0;"class="pure-group">
 <label for="message">Message: </label>
-<textarea id="message" name="message" rows="5"
+<textarea id="message" name="message" rows="3"
 placeholder="Tell us what's on your mind..."></textarea>
 </fieldset>
 
@@ -236,7 +244,7 @@ We will get back to you soon!</h2>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Powered by <a href="http://www.rojaslab.me" title="rojaslab" target="_blank" class="w3-hover-text-green">Rojaslab</a> & <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
 <!--contactus form-->

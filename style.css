@@ -315,3 +315,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     font-style: italic;
     background-color: lightgray;
   }
+
+  .homepagebg{
+    background-image: url(images/loom.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  

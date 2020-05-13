@@ -317,23 +317,26 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   }
 
   .homepagebg{
-    background-image: url();
+    background-image:
+     linear-gradient(black,black), 
+     url(images/cars1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     background-size: cover;
+    background-blend-mode: saturation;
+    top: 20px;
   }
   
 
   .logo-medium{
     width: 50%;
-    z-index: 2;
-    top: 0px;
+    
     
   }
   
-  .backgroundlogo {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-  }
+ 
+ 
+ 
+ 
+ 

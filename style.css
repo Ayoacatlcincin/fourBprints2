@@ -317,10 +317,23 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   }
 
   .homepagebg{
-    background-image: url(images/loom.jpg);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     background-size: cover;
   }
   
+
+  .logo-medium{
+    width: 50%;
+    z-index: 2;
+    top: 0px;
+    
+  }
+  
+  .backgroundlogo {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
